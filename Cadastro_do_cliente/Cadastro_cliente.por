@@ -3,12 +3,11 @@ programa {
 	funcao inicio() {
 	   cadeia resposta, consulta
 		/*Dados do cliente*/
-		cadeia dadosSolicitados []= {"Nome completo","CPF","RG","Telefone","E-mail","Rua com Nº","Bairro","Cidade Estado","CEP"}
-		cadeia dadosInformados[] = {"Nome completo","CPF","RG","Telefone","E-mail","Rua com Nº","Bairro","Cidade Estado","CEP"}
+		cadeia dadosSolicitados []= {"Nome completo","CPF","RG","Telefone","E-mail","Rua com Nï¿½","Bairro","Cidade Estado","CEP"}
+		cadeia dadosInformados[] = {"Nome completo","CPF","RG","Telefone","E-mail","Rua com Nï¿½","Bairro","Cidade Estado","CEP"}
         /*Dados do Destino*/
         cadeia dadosSolicitadosDaViagem []= {"Origem","Destino","Data de ida","Data de vinda"}
         cadeia dadosDaViagem []= {"Origem","Destino","Data de ida","Data de vinda"}
-        
         
     escreva("**********Vamos iniciar o seu cadastro**********")
     para (inteiro i = 0; i<=8; i++){
@@ -22,7 +21,6 @@ programa {
 	leia(dadosSolicitadosDaViagem[i])
 	limpa()
     }
-    
     
     escreva("Deseja consultar os do cadastro e da viagem?[S/N] ")
     leia(resposta)
