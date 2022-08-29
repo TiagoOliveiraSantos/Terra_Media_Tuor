@@ -157,6 +157,10 @@ h5 {
 		text-align: center;
 	}
 
+	.logo {
+        display: none;
+    }
+
 }
 
 .menu-de-escolha {
@@ -177,5 +181,27 @@ h5 {
 }
 .botaoMenu{
 	background-color: #b98c03 ;
+	
 }
 
+/*Pagina Login*/
+.bv {
+    font-family: 'Roboto';
+    color: #FFC107;
+    font-weight: 500;
+    margin-top: 5px;
+    text-decoration: none;
+    
+}
+.botao-login {
+    text-align: center;
+    font-weight: 600;
+}
+.divlogin {
+    background-color:rgb(48, 48, 48);
+    font-weight: bold;
+    border-radius: 20px;
+	margin-top: 5px;
+	margin-bottom: 55px;
+	
+}

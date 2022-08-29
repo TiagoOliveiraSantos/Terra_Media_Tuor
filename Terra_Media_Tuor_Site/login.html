@@ -55,56 +55,55 @@
           </div>
       </div>
   </nav>
-    <!--Fim do menu de navegação-->
-  <!--Contatos-->
-  <header>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="text-center col-lg-3">
-          <h1 class="tituloPaginas">Contato</h1>
-          <p>Entre em contato conosco</p>
-          <a href="#"><img src="Img/icone_insta.png" alt="Instagram"></a>
-          <a href="#"><img src="Img/icone_telegram.png" alt="Telegram"></a>
-          <a href="#"><img src="Img/icone_wspp.png" alt="WhatsApp"></a>
+<!--Fim da barra de navegação-->
+<main>
+    <section class="pt-5">
+        <div class="container-md  w-auto p-5">
+          <div class="row justify-content-between">
+              <div class="col-lg-5 divlogin">
+                  <form>
+                      <h1 class="bv text-left">Bem-vindo!</h1>
+                      <hr class="featurette-divider bv">
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                          <label class="form-label bv" for="form3Example3">E-mail</label>
+                          <input type="email" id="form3Example3" class="form-control form-control-lg"
+                          placeholder="exemplo@dominio.com"/>
+                        </div>
+                        <!-- Password input -->
+                        <div class="form-outline mb-3">
+                            <label class="form-label bv" for="form3Example4">Senha</label>
+                            <input type="password" id="form3Example4" class="form-control form-control-lg"
+                            placeholder="Digite sua senha" />
+                        </div>
+                        <!-- Checkbox -->
+                        <div class="d-flex justify-content-between pt-3">
+                            <div class="form-check mb-0 bv">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                <label class="form-check-label text-right" for="form2Example3">
+                                    Salvar login
+                                </label>
+                            </div>
+                            <a href="#!" class="bv text-right">Esqueci minha senha</a>
+                        </div>
+                        <div class="pt-5">
+                            <button type="submit" class="botao btn btn-outline-secondary"
+                            style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                            <div class="row pt-5">
+                                <p class="bv col">Não tem uma conta?</p>
+                                <a href="cadastro.html" class="bv col text-center">Cadastre-se aqui</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 logo">
+                  <img src="Img/ImgPGlogin.png" class="img-fluid p-5" alt="Logo" >
+                </div>
+            </div>
         </div>
-  </header>
-  <hr class="featurette-divider">
-  <!--Fim do Contato-->
-  <!--Formulario-->
-  <main>
-    <section>
-      <div class="container-md fonte-roboto">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <form>
-              <div class="form-goup">
-                <label for="nome">Nome:</label>
-                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome...">
-              </div>
-              <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input class="form-control" type="email" name="email" id="email" placeholder="nome@exemplo..">
-              </div>
-              <div class="form-group">
-                <label for="mensagem">Mensagem</label>
-                <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="5"
-                  placeholder="Digite sua mensagem...."></textarea>
-              </div>
-              <br>
-              <div class="form-group d-grid gap-2" id="liveAlertPlaceholder">
-                <button type="button" class="botao btn btn-outline-secondary" id="liveAlertBtn">Enviar</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-5 text-center top-0">
-            <img class="imagem" height="300px" width="300px" src="Img/contato.png" alt="Icone de mensagem"></img>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <hr class="featurette-divider">
-  <!--Fim do conteudo-->
+      </section>
+</main>
+<hr class="featurette-divider">
   <!--Roda pé-->
   <footer class="text-muted bg-warning">
     <div class="container">
@@ -134,3 +133,4 @@
     crossorigin="anonymous"></script>
 </body>
 </html>
+
