@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9fd16b431a.js" crossorigin="anonymous"></script>
   <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
 rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -15,10 +16,10 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
 
 <body>
     <!--Menu de navegação-->
-    <nav class="navbar navbar-expand-lg bg-warning border-bottom py-1 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-warning py-1 fixed-top">
         <div class="container">
             <a class="navbar-brand text-secondary" href="index.html">  <img class="navbar-brand mr-0 mr-md-2 img-fluid" src="Img/Logo02.png" width="50" height="50" alt="Logo"><strong>Terra Media Tour</strong></a>
-            <button class="navbar-toggler botao" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse">
@@ -44,9 +45,9 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                       </li>
                         <li class="nav-item">
                         <a href="/carrinho.html"
-                          class="nav-link text-secondary animacao"><strong></strong>
+                          class="nav-link text-secondary animacao disabled">
                           <svg class="bi" width="24" height="24" fill="currentColor">
-                            <use xlink:href="/bi.svg#cart3"/>
+                            <use xlink:href="bi.svg#cart3"/>
                           </svg>
                         </a>
                       </li>
@@ -99,46 +100,54 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
   </header>
   <hr class="featurette-divider">
   <!--Fim do Caçalho-->
-
   <!--Inicio da escolha do dia da viagem-->
 <main>
-    <section class="pt-5">
-          <div class="container-md text-center">
-            <div class="row align-items-center g-3 menu-de-escolha align-items-center">
-              <div class="idaVolta col-md-3 align-self-center">
-                <img class="imgAv" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/
-                AP+gvaeTAAAElElEQVR4nO2aTWxUVRTHf+d1Zt4Qi4oRSEzUBEVZEI1Gg8HSYSIYgjFGFi6QuFCCMVGCpiHEIKYRFQg2YeGGGEUNNGFFommxqWl
-                faRu1wEbrxwINQYjQqiFt5c28zjsu2mKhTOfNmzvThfe3fO/
-                e//nPyf04974Bi8VisVgslv8pErWhevPuJAxdVud+FSGspikTqOcuRdgMPEDIKA5fU8gdkiz+
-                9HYlE6C9zKfgtgJPTT4aBv0KaCN0OyQ7Mmzefny0r34R40EzsBlIXPf6Z8ZlnTzhn516UDoBnnsA2FrkdQg6ALSj2kYmODVXo0P7mcd4ahsqO4Cbi7eUARr9x6Z8RknAT8CyiD6G0MnRMe52yJqRPyP2i40qQk9qI8h7wF2ROoWyVrJ+J8wcIjMRhtHIfhYisgnYRDJfUC81gNBGQdtZHZw2PTq0O72KHj4AfbSsjk64AuiEKCOg230a4RjgxHL5H5dAjyO0k8h3yEr+iiuknrsU2ANsiKmwUzL5dyHiLqBe6jmQg8At8QLOoAD6LdCOo+00BKdFSo8z7ec2AncX8AqQih192hSIvg2eSC8hDI+ArIgduDgXUW1HOI6T75BV/H1N7EFSDLmvIrITdEFlocpcBK8xcpIk/7i7UZqofEoUowB8g2objh4HWQKyB+UeA9o/grNOMlfOTT0oKwFTqOc+CXwGLDZgqhaMgO4lmW+RlVyZ/iJWAgC0p34hGhwC1ldsr3qEiB6mkNwu2bE/btQgdgJgag92twL7qGRRqgZCJ6pvSCb//ezNDKBdyUdwnFbgXhN6lZlhEGG7ZHJtUZobWcgkG5ykLvcw6GETejE5D/Iyl3IPRv3xYGgETEe99AugHwL1prWLMAayn6S/9/oFLgrGEwCgve79FGgFHqqG/iTjwMcEiV2yZuxiXJGqJABA23C5yd0HvGY8TsQFLppUFdFBUgy7R4FnzCjKKUKaJOt3m9Gr5giYOES1YGZn+B3kHRr9j0yfKK8eh7WvfhEaLCDInZEs43EFtWteA05hP2DizHAZ9H3C/IHrr7JMIQDa476Oso+JhIwB34H0odpPkOuXtVwuJaQn3PsI2QM8a8BXABxEks3SODpkQK8ool3zb8fJn6d4JRcCgwi9IP0ofZLxf5t6OVkSvw1sAZIVO1KOkWCHNOR+
-                qVgrAjJxzNUzZfa7gNIPnEN4iVnv4CJbGQCaJOP3VK5VRlQA9dwOYG0tA09zcBbVN2nMt0a5FDHNRCkc5jYAX9Q49ihIM4XcMsnkj8zFj4dp26AepY7FbgvFr8BNEQCfkEi+JY+PXqpyrJLMqAPUS2+ZrOVL3xiXH60TR7dJQ37QuHZMblgITd74HMXYJaicRGiSRt8zo2eOopWgdqWWUydfotxdgf45kN3VqOBMMWspPPGdLf8iOLfOLqP1zKwBTjOWOyTryVVm0WKxWCwWi8VisVgsFovFYrFYLMYQVRy89PNIeMdcm7mKOhfI+IdrcZWeoCe9CdFPq/xvmfIQBS8N+J9XO5SDzs1HyZI4tfE1MQVOpDeiLK9FwEgIP7DKP1KLKfAv3G+TN0oUUesAAAAASUVORK5CYII=">
-                <input class="inputDestino text-center" type="text" placeholder="Local de origem" value="">
-              </div>
-              <div class="idaVolta col-md-3 align-self-center">
-                <img class="imgAv" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFo0lEQVR4nO2bXWyTVRjH/8/pu9GuIHFcyFoxZogo4gc4syt1AhpBRWIgxkgR
-                x3raMJo4cWriBcWPRBGDUdO0HYN5MW+450KJyIUxXrTThSghxIhkq8ZkmDggtOt5vKANY+vH+7497Trs767vOed/zvvPcz7ec06BBv9vaK4bAACBQGATMx8EcBeAH4QQvdFo9HQt6p5zA6SU9wD4CcCCaY/
-                /mpqaWnHkyJF/q12/qHYF5SCirbjx5QHgtqamppdqUb9ht2B3d7fHMIwuIcSv0Wh0pII23FHooVJqE4B4BbqmsBUBPT09DxuGcQbAsFIqIaV8zW4DmLm10HMiWrdt27Zmu7pmsWWAEOJ1AItyPwnAez6fz22zDQUNALCotbX1UZuaprE7Bjww4/dCp9P5nE2tJSXSnrapaRo7BhCA5bMeEr1osw3FIgDMvMmmpmksGyClXAbAVSBpo5RysY02FDUAwKpgMHinDU3TWDaAiFYUSVoAYIsVrZ07dzoBtJTKw8xV7QZ2ukAxAwDAUjdwOp2l+j8AgJk3WtG0imUDlFKlDNjQ29tb9qWmaZUK/zzrQ6HQzIWSNiwbIIS4u0RyUzqdfsGsVrE1wAzc6XT6MbOaVrFsADOXHJSszAZEdKvJOqs2G9gZA0bLpHft3r17qRkhkxEAAFUbBywbYBjG2wAmS2RxTE1NbTWjRURmx4uVUspZaw8dWDYgEolcYOb9ZbJ1mxkMzXaBHFWZDm0thb1e76cAfi6RZU0mk/ldShnOzfUFYWbTMwaq1A1sGRAOh6eEEL0AuES2hQD2NTc3nw0EAjIcDs+qy8IYAADr+vr6Cq1AK8L2hkg0Gv0ewFETWZcxc2x8fPzHYDDYdUPlQlgxwDU5Oal9OqxoRyibzfYD+Ntk9g6l1Ekp5TfBYHA1YDkCIITQ3g0clRQeGRm50tHRMQFgs4Vi7czs7+joWArgEVzrKmZZkkgkPrfUyDLo2BQlKeVJAI9r0CpLNptdMTg4eE6Xno5NURZC7AGQ0aBVFsMwtHYDLbvCuT38z3RolUP316G2bXHDMMIAzuvSK0GXzulQmwGRSGQym81uIKJvdWkWwXX58uUndIlpPRgZHBw8F4vF1jPzkyj/0WQbpZS2ZXFVToYGBgZOeDyeNUT0CoA/desT0bPatHQJFcPn87lbWlr2MPM7uH6WUDHMvHJgYOBspTo1OxwNBoNeZn6fmXdAQ+Qx83cOhyNU6SlyzU+HA4HAKmY+AOAZDXIKwDCAt+LxeMqOwJwdj/v9/g1E9AlmnzLZ4RIzf5HNZj+weqQ+p/cDwuGwSKVS25n5QwBtGiTHiWj/xMTE4LFjx7JmCsz5BQmgKgPlL0TUH4vFjpfLWBcG5MndOdgHYBcq/FLNcUIptffw4cNF1yR1ZUCenp6eex0OxwFm1jHfKwDDhmG8GYlEZq1J6tKAPLmB8iCABzXIXQJw0O12f3To0KEr+Yc6wqxqJJPJ39rb2wdcLtcFXNs8qWR8aAbQlclkdqxdu/ZMMpk8B9R5BEzH5/O5XS7XGwD6Adi9jZInS0SbY7HY8XljQB4pZ
-                RuAdwG8isoi+PzFixeXzzsD8kgp7wdwABUcmAghOuetAXmklE8B+Bg2VpREtGXOL0pWSjwe/9rj8axh5l0Axq2UJaI/5n0ETMfn87mdTudeIupH+e32M/F4fFVdT4NWGR0dzSSTyVOdnZ1HmXkxgIdQ+NP7EhFtTSQSF26qCJiJ3++/j4j2A3ge168FnxJC9OWv997UBuQJhUK3pNPp269evTo+NDT0z1y3p0GDBg0aNGjQoEE9UJOlcDgcFmNjYy8LITy1qM8MSqlxr9c7bPt/g1ZIpVLbiehL5lL3KmsLEWFsbKw2/xxVStXPm09DCME1iQCv1zucSqVYKbW6FvWZQQhxuq2t7av/ALNJsNh1moQ2AAAAAElFTkSuQmCC">
-                <input class="inputDestino text-center" type="text" placeholder="Local de destino" value="" >
-              </div>
-              <div class="idaVolta col-md-3 align-self-center">
-                <spam class="destino">Data de ida</spam>
-                <input class="inputDestino text-center" type="date" placeholder="Data de ida" value="">
-              </div>
-              <div class="idaVolta col-md-3 align-self-center">
-                <spam class="destino">Data de volta</spam>
-                <input class="inputDestino text-center" type="date" placeholder="Data de volta" value="">
-              </div>
+  <section class="pt-5 align-items-center caixaDestino">
+    <div class="bg-warning bg-gradient container-fluid escolaDestino">
+      <div class="container-md my-4 container-form menuescolhaCima">
+        <div class="row align-items-center">
+          <h4 class="text-secondary">Escolha o seu destino</h4>
+          <div class="col-xs-12 pt-1">
+            <div class="form-check form-check-inline align-self-center">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Ida e volta
+              </label>
             </div>
-            <div class="idaVolta col-12 d-grid gap-2">
-              <input type="submit" value="Buscar" class="botao btn btn-outline-secondary">
+            <div class="form-check form-check-inline align-self-center">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+               Só ida
+              </label>
             </div>
           </div>
-    </section>
+        </div>
+      </div>
+      <div class="container-md text-center align-items-center menuEscolhaBaixo">
+        <div class="row align-items-center g-3">
+          <div class="col-md-5 pt-1">
+            <div class="input-group">
+              <input class="form-control"  type="text" placeholder="Local de origem" value="">
+              <span class="input-group-text"><i class="fa-solid fa-right-left"></i></span>
+              <input class="form-control" type="text" placeholder="Local de destino" value="" >
+            </div>
+          </div>
+          <div class="col-md-5 pt-1">
+            <div class="input-group">
+              <input class="form-control"  type="date" placeholder="Local de origem" value="">
+              <span class="input-group-text"><i class="fa-solid fa-right-left"></i></span>
+              <input class="form-control" type="date" placeholder="Local de destino" value="" >
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-md-2 pt-1">
+            <input type="submit rounded" value="Buscar" class="botao btn-secondary btn btn-outline-light">
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
      <!--Fim da escolha do dia da viagem-->
-    
      <hr class="featurette-divider">
-
     <!--Inicio dos dados da pagina-->
     <div class="container pt-5">
         <div class=" p-4 p-md-5 mb-4 rounded text-white bg-secondary bg-gradient">
@@ -151,7 +160,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
         </div>
         <div class="row mb-2">
           <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-warning">
               <div class="col p-4 d-flex flex-column position-static">
                 <strong class="d-inline-block mb-2 text-secondary">Salvador</strong>
                 <h3 class="mb-2 text-warning">Pelourinho</h3>
@@ -165,7 +174,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
             </div>
           </div>
           <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-warning">
               <div class="col p-4 d-flex flex-column position-static">
                 <strong class="d-inline-block mb-2 text-secondary">Rio De Janeiro</strong>
                 <h3 class="mb-2 text-warning">Cristo Redentor</h3>
@@ -180,7 +189,6 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
           </div>
         </div>
       </div>
-
   <!--Inicio da oferta-->
   <div class="container">
     <div class="row">
@@ -250,7 +258,42 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
     </div>
   </div>
   <!--Fim da oferta-->
-
+  <!--Promoções-->
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-warning">
+          <div class="col-auto d-none d-lg-block">
+            <img src="Img/destinos_16.jpg" class="bd-placeholder-img " width="250" height="250" xmlns="" role="img" aria-label="Placeholder: Salvador" preserveAspectRatio="xMidYMid slice" focusable="false">
+          </div>
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-secondary">Cairu</strong>
+            <h4 class="mb-2 text-warning">Morro de São Paulo</h4>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <br>
+            <a class="botao2 btn btn-warning btn-outline-secondary" href="destinos.html"
+            type="button rounded">Comprar passagem</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-warning">
+          <div class="col-auto d-none d-lg-block">
+            <img src="Img/destinos_17.jpg" class="bd-placeholder-img" width="250" height="250" xmlns="" role="img" aria-label="Placeholder: Salvador" preserveAspectRatio="xMidYMid slice" focusable="false">
+          </div>
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-secondary">Mata de São João</strong>
+            <h4 class="mb-2 text-warning">Praia do Forte</h4>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <br>
+            <a class="botao2 btn btn-warning btn-outline-secondary" href="destinos.html"
+            type="button rounded">Comprar passagem</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fim Promoções-->
 </main>
 <!--Fim dos dados da pagina-->
   <hr class="featurette-divider">

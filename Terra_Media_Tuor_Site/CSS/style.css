@@ -160,31 +160,36 @@ h5 {
 	.logo {
         display: none;
     }
+	
+	.escolaDestino{
+		text-align: center;
+	}
 
 }
 
-.menu-de-escolha {
-	font-family: 'Roboto';
-	color: gray;
-	font-weight: 700;
-}
+/*Pagina Login*/
 
 .botao {
-	background-color: #dfae1d;
-	color: gray;
 	border: none;
 	font-weight: 500;
 	font-family: 'Roboto';
 	font-size: large;
 	border-radius: 10px;
-	margin-top: 15px;
+	
 }
 .botaoMenu{
 	background-color: #b98c03 ;
 	
 }
+.botao2{
+	border: none;
+	font-weight: 500;
+	font-family: 'Roboto';
+	border-radius: 10px;
+	
+}
 
-/*Pagina Login*/
+
 .bv {
     font-family: 'Roboto';
     color: #FFC107;
@@ -204,4 +209,19 @@ h5 {
 	margin-top: 5px;
 	margin-bottom: 55px;
 	
+}
+.escolaDestino{
+	border-radius: 10px;
+}
+.menuEscolhaBaixo{
+	padding-bottom: 15px;
+	margin-top: 2px;
+}
+.menuescolhaCima{
+	padding-top: 15px;
+}
+.caixaDestino{
+	font-family: 'Roboto';
+	margin-left: 15px;
+	margin-right: 15px;
 }
