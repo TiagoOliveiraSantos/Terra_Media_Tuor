@@ -10,14 +10,14 @@
   
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="shortcut icon" href="Img/Logo.png" type="image/x-icon">
- 
-    <title>Terra Media Tour | Contatos</title>
+  <title>Terra Media Tour | Contatos</title>
+
 </head>
 <body>
     <!--Menu de navegação-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning border-bottom py-1 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-warning py-1 fixed-top textoNav">
       <div class="container">
-          <a class="navbar-brand text-secondary" href="index.html">  <img class="navbar-brand mr-0 mr-md-2 img-fluid" src="Img/Logo02.png" width="50" height="50" alt="Logo"><strong>Terra Media Tour</strong></a>
+          <a class="navbar-brand text-secondary" href="index.html">  <img class="navbar-brand mr-0 mr-md-2 img-fluid" src="Img/Logo02.png" width="50" height="50" alt="Logo">Terra Media Tou</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,26 +27,26 @@
               <div class="aling-self-end">
                   <ul class="navbar-nav" style="margin:2px 2px 2px;">
                       <li class="nav-item">
-                          <a class="nav-link text-secondary animacao"
-                              href="destinos.html"><strong>Destinos</strong></a>
+                          <a class="nav-link text-secondary animacao "
+                              href="destinos.html">Destinos</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link text-secondary animacao"
-                              href="promocoes.html"><strong>Promoções</strong></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link text-secondary animacao"
-                              href="contatos.html"><strong>Contatos</strong></a>
+                              href="promocoes.html">Promoções</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link text-secondary animacao"
-                            href="login.html"><strong>Login</strong></a>
+                            href="login.html">Login</a>
                     </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-secondary animacao"
+                              href="contatos.html">Contatos</a>
+                      </li>
                       <li class="nav-item">
                       <a href="/carrinho.html"
                         class="nav-link text-secondary animacao disabled">
                         <svg class="bi" width="24" height="24" fill="currentColor">
-                          <use xlink:href="/bi.svg#cart3"/>
+                          <use xlink:href="bi.svg#cart3"/>
                         </svg>
                       </a>
                     </li>
@@ -55,25 +55,28 @@
           </div>
       </div>
   </nav>
-    <!--Fim do menu de navegação-->
+  <!--Fim do menu de navegação-->
+
   <!--Contatos-->
   <header>
     <div class="container">
       <div class="row justify-content-center">
         <div class="text-center col-lg-3">
           <h1 class="tituloPaginas">Contato</h1>
-          <p>Entre em contato conosco</p>
+          <p class="tagsP">Entre em contato conosco</p>
           <a href="#"><img src="Img/icone_insta.png" alt="Instagram"></a>
           <a href="#"><img src="Img/icone_telegram.png" alt="Telegram"></a>
           <a href="#"><img src="Img/icone_wspp.png" alt="WhatsApp"></a>
         </div>
   </header>
-  <hr class="featurette-divider">
   <!--Fim do Contato-->
+
+  <hr class="featurette-divider">
+  
   <!--Formulario-->
   <main>
     <section>
-      <div class="container-md fonte-roboto">
+      <div class="container-fluid tagsP">
         <div class="row align-items-center">
           <div class="col-lg-7">
             <form>
@@ -92,7 +95,7 @@
               </div>
               <br>
               <div class="form-group d-grid gap-2" id="liveAlertPlaceholder">
-                <button type="button" class="botao2 btn btn-warning btn-outline-secondary" id="liveAlertBtn">Enviar</button>
+                <button type="submit" class="botao2 btn btn-warning btn-outline-secondary" id="liveAlertBtn">Enviar</button>
               </div>
             </form>
           </div>
@@ -103,33 +106,38 @@
       </div>
     </section>
   </main>
-  <hr class="featurette-divider">
   <!--Fim do conteudo-->
+  
+  <hr class="featurette-divider">
+
   <!--Roda pé-->
-  <footer class="text-muted bg-warning">
+  <footer class="text-muted bg-warning rodaPe">
     <div class="container">
       <div class="row py-2">
-        <div class="col-12 col-md-4 text-center text-md-left fonte-roboto">
+        <div class="col-12 col-md-4 text-center text-md-left ">
           <img src="Img/Logo02.png" alt="Logo" width="35" height="35">
           &copy; 2022 - Terra Media Tour
         </div>
         <div class="col-12 col-md-4 text-center">
-          <p class="fonte-roboto">Todos os direitos reservados</p>
+          <p class="">Todos os direitos reservados</p>
         </div>
         <div class="col-12 col-md-4 text-center text-md-right ">
-          <a href="contatos.html" class="fonte-roboto text-secondary">Contatos</a>
+          <a href="contatos.html" class=" text-secondary">Contatos</a>
         </div>
       </div>
     </div>
   </footer>
   <!--Fim dp roda pé-->
-  <!--Import do meu script-->
-  <script src="JS/script.js"></script>
-  <!-- Popper.js first, then Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+
+  <!--Import do meu script
+  <script src="JS/script.js"></script>-->
+
+    <!--JavaScript Booststrap-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
 </body>

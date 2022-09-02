@@ -8,24 +8,10 @@ body {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	
 }
+/*Fim zerando o CSS*/
 
-	/*IDEX*/
-.imgAv{
-	margin: 0px 0px 0px 0px;
-	padding-right: 8px;
-
-}
-.idaVolta{
-	padding-right: 0px;
-	padding-left: 0px;
-	margin-top: 25px;
-	text-align: center;
-}
-
-
-/*Animaçãod dos links*/
+/*Animaçãos dos links*/
 a{
 	text-decoration: none;
 }
@@ -34,17 +20,14 @@ a:visited,
 a:active {
 	text-decoration: none;
 	font-family: 'Roboto';
-	font-weight: 500;
-	
+	font-weight: 500;	
 }
-
 .animacao:hover {
 	background: #b38d1aa9;
 	color: gray;
 	font-family: 'Roboto';
 	font-weight: 500;
 	border-radius: 10px;
-	
 }
 .animacaoCorrossel:hover {
 	background: #FFCA2C;
@@ -54,163 +37,126 @@ a:active {
 	border-radius: 10px;
 	border: none;
 }
+.linkLogin:hover {
+    font-family:'Roboto';
+    color: white;
+    font-weight: 500;
+    margin-top: 5px;
+    text-decoration:none; 
+}
+/*Fim das animações dos links*/
 
-
-/*Demais formatações*/
-.fonte-roboto {
+/*Formatação de textos*/
+.rodaPe {
 	font-family:'Roboto';
 	font-weight: 500;
 	color: gray;
 	font-style: normal;
 	text-decoration: none;
-
 }
-
-.fonte-roboto-italic {
+.fonteItalic {
 	font-family: 'Roboto';
 	font-style: oblique;
 	color: rgba(189, 189, 189, 0.075);
 }
-
-.carousel-borda {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.carrinho {
-	background-color: rgba(39, 39, 39, 0.274);
-	color: rgba(128, 128, 128, 0.034);
-	font-family: 'Roboto';
-	font-weight: 500;
-}
-
-p {
+.tagsP {
 	font-family: 'Roboto';
 	color: gray;
 	font-style: normal;
 	text-decoration: none;
 }
-
-h2 {
+.tituloH2 {
 	font-family: 'Roboto';
 	color: #FFC107;
 	font-style: normal;
 	text-decoration: none;
 }
-
-h5 {
+.tituloCards {
 	font-family: 'Roboto';
 	color: #FFC107;
 	font-style: normal;
 	text-decoration: none;
 }
-
-/*h3 {
-	font-family: 'Roboto';
-	color: #FFC107;
-	font-style: normal;
-	text-decoration: none;
-	background-color: rgba(128, 128, 128, 0.527);
-	border-radius: 20px;
-	border-width: 10px;
-	background-size: 5x;
-}*/
-
-/*Destiono*/
-.inputDestino{
-	background-color: rgba(107, 106, 106, 0.336);
-	border:none;
-	border-radius: 5px;
-}
-
 .tituloPaginas{
-	margin-top: 90px;
+	margin-top: 95px;
 	text-align: center;
 	font-family:'Roboto';
 	font-weight: 500;
 	color: gray;
-	font-style: normal;
-	text-decoration: none;
 }
+.textoLogin {
+    font-family:'Roboto';
+    color: #FFC107;
+    font-weight: 500;
+    margin-top: 5px;
+    text-decoration:none; 
+}
+.textoNav{
+	font-weight: bold;
+}
+/*Fim formatação de textos*/
 
+/*Formatação carousel*/
+.carousel-borda {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 80px;
+}
+/*Fim formatação carousel*/
 
+/*Ajustes de tela na responsividade*/
 @media (max-width: 992px) {
 	.imagem {
-
 		display: none;
 	}
-
 	form {
 		align-items: center;
 	}
-	.titulo-provisorio {
-		font-size: 15px;
-		color: gray;
-		background-color: #ffc1075d;
-
-	}
-
 	.carousel{
 		display: none;
 	}
-	.marketing{
-		text-align: center;
-	}
-
-	.logo {
+	.imgLogin {
         display: none;
     }
-	
-	.escolaDestino{
+	.caixaDestino{
+		margin-top: 90px;
 		text-align: center;
+
 	}
-
 }
+/*Fim ajustes de tela na responsividade*/
 
-/*Pagina Login*/
-
+/*Botões*/
 .botao {
 	border: none;
 	font-weight: 500;
 	font-family: 'Roboto';
-	font-size: large;
 	border-radius: 10px;
-	
-}
-.botaoMenu{
-	background-color: #b98c03 ;
-	
 }
 .botao2{
 	border: none;
 	font-weight: 500;
 	font-family: 'Roboto';
 	border-radius: 10px;
-	
 }
+/*Fim botões*/
 
-
-.bv {
-    font-family: 'Roboto';
-    color: #FFC107;
-    font-weight: 500;
-    margin-top: 5px;
-    text-decoration: none;
-    
-}
-.botao-login {
-    text-align: center;
-    font-weight: 600;
-}
+/*Caixas*/
 .divlogin {
     background-color:rgb(48, 48, 48);
     font-weight: bold;
     border-radius: 20px;
 	margin-top: 5px;
 	margin-bottom: 55px;
-	
 }
-.escolaDestino{
+.caixaDestino{
+	font-family: 'Roboto';
+	margin-left: 15px;
+	margin-right: 15px;
+	color: gray;
+	font-weight: 500;
+}
+.escolhaDestino{
 	border-radius: 10px;
 }
 .menuEscolhaBaixo{
@@ -220,8 +166,13 @@ h5 {
 .menuescolhaCima{
 	padding-top: 15px;
 }
-.caixaDestino{
+/*Fim caixas*/
+
+/*Pagina de carrinho*/
+.contrunido{
+	margin-top: 90px;
+	text-align: center;
+	color: #FFC107;
 	font-family: 'Roboto';
-	margin-left: 15px;
-	margin-right: 15px;
+
 }

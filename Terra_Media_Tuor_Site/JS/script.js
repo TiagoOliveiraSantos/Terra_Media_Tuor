@@ -1,6 +1,6 @@
-/*Alert da pagina de contado
---> Confirmação do envio do e-mail
-*/
+/*Alert da pagina de contado*/
+
+/*--> Confirmação do envio do e-mail*/
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const alert = (message, type) => {
   const wrapper = document.createElement('div')
