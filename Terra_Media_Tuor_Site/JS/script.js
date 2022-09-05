@@ -1,22 +1,18 @@
 /*Alert da pagina de contado*/
 
-/*--> Confirmação do envio do e-mail*/
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-const alert = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="submit" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
-
-  alertPlaceholder.append(wrapper)
+//Incluindo notificação de e-mail enviado
+function msgNoticacao(){
+  document.getElementById("notificacao").innerHTML = 'E-mail enviado com sucesso!';
+  document.getElementById("notificacao").style.backgroundColor = "rgb(0,255,0,0.15)";
+  document.getElementById("notificacao").style.color = "green";
+  
+  //chamando a funcão de remoção da mensagem
+  rmMsg(); 
 }
+//Removendo notificação de e-mail enviado
+function rmMsg(){
+setTimeout(function(){
+document.getElementById("notificacao").innerHTML="";
+},3000)
 
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    alert('E-mail enviado com sucesso!', 'success')
-  })
 }
