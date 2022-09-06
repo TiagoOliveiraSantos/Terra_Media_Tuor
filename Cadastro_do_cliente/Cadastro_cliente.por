@@ -3,8 +3,8 @@ programa {
 	funcao inicio() {
 	   cadeia resposta, consulta
 		/*Dados do cliente*/
-		cadeia dadosSolicitados []= {"Nome completo","CPF","RG","Telefone","E-mail","Rua com N�","Bairro","Cidade Estado","CEP"}
-		cadeia dadosInformados[] = {"Nome completo","CPF","RG","Telefone","E-mail","Rua com N�","Bairro","Cidade Estado","CEP"}
+		cadeia dadosSolicitados []= {"Nome completo","CPF","RG","Telefone","E-mail","Rua com N","Bairro","Cidade Estado","CEP"}
+		cadeia dadosInformados[] = {"Nome completo","CPF","RG","Telefone","E-mail","Rua com N","Bairro","Cidade Estado","CEP"}
         /*Dados do Destino*/
         cadeia dadosSolicitadosDaViagem []= {"Origem","Destino","Data de ida","Data de vinda"}
         cadeia dadosDaViagem []= {"Origem","Destino","Data de ida","Data de vinda"}
